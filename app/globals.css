@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema claro */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Tema oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo degradado global */
+body {
+  background: linear-gradient(to bottom right, #ffffff, #000000);
+  min-height: 100vh;
+}
